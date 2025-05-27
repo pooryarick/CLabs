@@ -34,6 +34,7 @@ void stack_test_3() {
   int *out = malloc(sizeof(int));
   assert(pop(st, out) == 0);
   assert(st->size == 2);
+  free(out);
   clean_memory(st);
 }
 
